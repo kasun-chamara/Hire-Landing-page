@@ -23,7 +23,7 @@ const About = () => {
             We at company-name strive to provide you by developing and implementing innovative solutions which empower your business and make you stand out from your competition. 
             We deliver innovative and scalable solutions to our clients with the latest technology allowing them to grow exponentially with their business pace.
               </p>
-              <div className="flex items-center mt-10 gap-7">
+              <div className="flex items-center mt-10 gap-7 ">
                 {info.map((content) => (
                   <div key={content.text}>
                     <h3 className="text-2xl font-semibold text-white md:text-4xl">

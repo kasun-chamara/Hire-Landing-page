@@ -41,21 +41,21 @@ const Services = () => {
   ];
 
   return (
-    <section id="service" className="relative py-10 bg-gray-800">
+    <section id="service" className="relative px-4 py-10 bg-gray-800">
       <div className="mt-8 text-gray-100">
         <h3 className="text-4xl font-semibold text-center">
           Our <span className="text-cyan-400">Services</span>
         </h3>
-        <p className="mt-3 text-lg text-gray-400 text-center">Explore our expertise</p>
+        <p className="mt-3 text-lg text-center text-gray-400">Explore our expertise</p>
         <div className="flex flex-wrap items-stretch justify-center gap-16 mt-6 sm:mt-12">
           {Service?.map((Service, i) => (
             <div
               key={i}
-              className="border-2 border-gray-900 border-b-cyan-500 relative w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 bg-gray-900 p-4 rounded-xl py-11"
+              className="relative w-full p-4 bg-gray-900 border-2 border-gray-900 border-b-cyan-500 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 rounded-xl py-11"
             >
               <div className="flex flex-col items-center justify-start mb-2">
-                <img src={Service.image} alt={Service.level} className="w-12 h-12 object-cover rounded-full mb-2" />
-                <p className="text-xl font-bold mb-2">{Service.level}</p>
+                <img src={Service.image} alt={Service.level} className="object-cover w-12 h-12 mb-2 rounded-full" />
+                <p className="mb-2 text-xl font-bold">{Service.level}</p>
                 <p className="text-sm text-gray-500">{Service.description}</p>
               </div>
             </div>
