@@ -16,7 +16,7 @@ const About = () => {
         </h3>
         <br></br><br></br>
 
-        <div className="flex flex-col-reverse items-center max-w-6xl gap-12 px-10 mx-auto md:flex-row md:gap-6">
+        <div className="flex flex-col-reverse items-center max-w-6xl px-10 mx-auto md:flex-row md:gap-6">
           <div className="p-2">
             <div className="my-3 text-gray-300">
               <p className="w-11/12 px-6 mx-auto leading-7 text-justify">
