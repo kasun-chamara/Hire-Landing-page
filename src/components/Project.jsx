@@ -43,7 +43,7 @@ const Project = () => {
   ];
 
   return (
-    <section id="projects" className="py-10 text-white text-xs antialiased">
+    <section id="projects" className="px-4 py-10 text-xs antialiased text-white">
       <div className="text-center">
         <h3 className="text-4xl font-semibold">
           OUR <span className="text-cyan-400">Projects</span>
@@ -74,7 +74,7 @@ const Project = () => {
         >
           {projects.map((project_info, i) => (
             <SwiperSlide key={i}>
-             <div className="w-full p-4  h-fit bg-slate-800 rounded-xl">
+             <div className="w-full p-4 h-fit bg-slate-800 rounded-xl">
 
                 <img src={project_info.img} alt="" className="rounded-lg" />
                 <h3 className="my-4 text-xl">{project_info.name}</h3>

@@ -1,48 +1,50 @@
 import React from "react";
-
-const Contact = () => {
-  const contact_info = [
-   
+const About = () => {
+  const info = [
+    { text: "Years in Operation", count: "06" },
+    { text: "Successful Projects", count: "310" },
+    { text: "Loyal Clients", count: "100" },
+    { text: "Industries Serving", count: "20" },
+    { text: "Branches Worldwide", count: "06" },
+    
   ];
   return (
-    <section id="contact" className="py-6 px-3 text-white">
-      <div className="text-center mt-4">
+    <section id="about" className="py-10 text-white">
+      <div className="mt-8 text-center">
         <h3 className="text-4xl font-semibold">
-          Contact <span className="text-cyan-600">US</span>
+          About <span className="text-cyan-400">US</span>
         </h3>
-        <p className="text-gray-400 mt-3  text-md ">Get in touch</p>
+        <br></br><br></br>
 
-        <div
-          className="mt-8 flex flex-col lg:flex-row 
-         gap-4 max-w-3xl bg-gray-800 lg:p-10 p-2 rounded-xl mx-auto"
-        >
-          <form className="flex flex-col flex-1 gap-3 ">
-            <input type="text" placeholder="Your Name" className="p-3 text-sm " />
-            <input type="email" placeholder="Your Email Address" className="p-3 text-sm " />
-            <textarea placeholder="Your Message" rows={4} className="p-3 text-sm "></textarea>
-            <button className="btn-primary w-fit p-1">Send </button> 
-          </form>
-          <div className="flex flex-col gap-4 lg:w-1/3 items-center"> 
-            {contact_info.map((contact, i) => (
-              <div
-                key={i}
-                className="flex flex-row  
-                  text-left gap-2 flex-wrap items-center"
-              >
-                <div className="min-w-[2rem] text-xl min-h-[2rem] flex items-center justify-center text-white bg-cyan-600 rounded-full">
-                  <ion-icon name={contact.logo}></ion-icon>
-                </div>
-                <p className="text-sm break-words">
-                  {contact.text}
-                </p>
+        <div className="flex flex-col-reverse items-center max-w-6xl gap-12 px-10 mx-auto md:flex-row md:gap-6">
+          <div className="p-2">
+            <div className="my-3 text-gray-300">
+              <p className="relative w-11/12 px-6 mx-auto leading-7 text-justify ">
+            We at company-name strive to provide you by developing and implementing innovative solutions which empower your business and make you stand out from your competition. 
+            We deliver innovative and scalable solutions to our clients with the latest technology allowing them to grow exponentially with their business pace.
+              </p>
+              <div className="flex items-center px-2 mt-10 gap-7">
+                {info.map((content) => (
+                  <div key={content.text}>
+                    <h3 className="text-2xl font-semibold text-white md:text-4xl scroll -px-11">
+                      {content.count}
+                      <span className="text-cyan-400">+</span>{" "}
+                    </h3>
+                    <span className="text-xs md:text-base">{content.text}</span>
+                  </div>
+                ))}
               </div>
-            ))}
-            <div className="hidden lg:flex flex-col gap-4">
-    <br></br>
+              <br />
+              <br />
+              
+            </div>
+          </div>
+          <div className="flex items-center justify-center flex-1 mt-6 md:mt-0">
+            <div className="relative w-11/12 h-full max-w-sm lg:w-96 sm:w-10/12 ">
               <img
-                src="https://zfunds.in/static/contactUs.svg"
-                alt="Your Alt Text"
-                className="rounded-lg max-w-[250px]"
+                src="https://www.pngplay.com/wp-content/uploads/7/Global-Networking-Transparent-PNG.png"
+                alt=""
+                className="object-cover w-full pb-1 "
               />
             </div>
           </div>
@@ -52,4 +54,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default About;
