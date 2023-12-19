@@ -44,7 +44,7 @@ const About = () => {
               <img
                 src="https://www.pngplay.com/wp-content/uploads/7/Global-Networking-Transparent-PNG.png"
                 alt=""
-                className="object-cover w-full "
+                className="object-cover w-full pb-9"
               />
             </div>
           </div>
