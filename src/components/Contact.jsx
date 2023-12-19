@@ -1,50 +1,46 @@
 import React from "react";
-const About = () => {
-  const info = [
-    { text: "Years in Operation", count: "06" },
-    { text: "Successful Projects", count: "310" },
-    { text: "Loyal Clients", count: "100" },
-    { text: "Industries Serving", count: "20" },
-    { text: "Branches Worldwide", count: "06" },
-    
+
+const Contact = () => {
+  const contact_info = [
+   
   ];
   return (
-    <section id="about" className="py-10 text-white">
-      <div className="mt-8 text-center">
+    <section id="contact" className="px-3 py-6 text-white">
+      <div className="mt-4 text-center">
         <h3 className="text-4xl font-semibold">
-          About <span className="text-cyan-400">US</span>
+          Contact <span className="text-cyan-600">US</span>
         </h3>
-        <br></br><br></br>
+        <p className="mt-3 text-gray-400 text-md ">Get in touch</p>
 
-        <div className="flex flex-col-reverse items-center max-w-6xl gap-12 px-10 mx-auto md:flex-row md:gap-6">
-          <div className="p-2">
-            <div className="my-3 text-gray-300">
-              <p className="relative w-11/12 px-6 mx-auto leading-7 text-justify ">
-            We at company-name strive to provide you by developing and implementing innovative solutions which empower your business and make you stand out from your competition. 
-            We deliver innovative and scalable solutions to our clients with the latest technology allowing them to grow exponentially with their business pace.
-              </p>
-              <div className="flex items-center px-2 mt-10 gap-7">
-                {info.map((content) => (
-                  <div key={content.text}>
-                    <h3 className="text-2xl font-semibold text-white md:text-4xl scroll -px-11">
-                      {content.count}
-                      <span className="text-cyan-400">+</span>{" "}
-                    </h3>
-                    <span className="text-xs md:text-base">{content.text}</span>
-                  </div>
-                ))}
+        <div
+          className="flex flex-col max-w-3xl gap-4 p-2 mx-auto mt-8 bg-gray-800 lg:flex-row lg:p-10 rounded-xl"
+        >
+          <form className="flex flex-col flex-1 gap-3 ">
+            <input type="text" placeholder="Your Name" className="p-3 text-sm " />
+            <input type="email" placeholder="Your Email Address" className="p-3 text-sm " />
+            <textarea placeholder="Your Message" rows={4} className="p-3 text-sm "></textarea>
+            <button className="p-1 btn-primary w-fit">Send </button> 
+          </form>
+          <div className="flex flex-col items-center gap-4 lg:w-1/3"> 
+            {contact_info.map((contact, i) => (
+              <div
+                key={i}
+                className="flex flex-row flex-wrap items-center gap-2 text-left"
+              >
+                <div className="min-w-[2rem] text-xl min-h-[2rem] flex items-center justify-center text-white bg-cyan-600 rounded-full">
+                  <ion-icon name={contact.logo}></ion-icon>
+                </div>
+                <p className="text-sm break-words">
+                  {contact.text}
+                </p>
               </div>
-              <br />
-              <br />
-              
-            </div>
-          </div>
-          <div className="flex items-center justify-center flex-1 mt-6 md:mt-0">
-            <div className="relative w-11/12 h-full max-w-sm lg:w-96 sm:w-10/12 ">
+            ))}
+            <div className="flex-col hidden gap-4 lg:flex">
+    <br></br>
               <img
-                src="https://www.pngplay.com/wp-content/uploads/7/Global-Networking-Transparent-PNG.png"
-                alt=""
-                className="object-cover w-full pb-1 "
+                src="https://zfunds.in/static/contactUs.svg"
+                alt="Your Alt Text"
+                className="rounded-lg max-w-[250px]"
               />
             </div>
           </div>
@@ -54,4 +50,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Contact;
