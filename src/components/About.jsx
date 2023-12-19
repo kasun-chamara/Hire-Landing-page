@@ -19,7 +19,7 @@ const About = () => {
         <div className="flex flex-col-reverse items-center max-w-6xl gap-12 px-10 mx-auto md:flex-row md:gap-6">
           <div className="p-2">
             <div className="my-3 text-gray-300">
-              <p className="w-11/12 mx-auto leading-7 text-justify ">
+              <p className="w-11/12 px-6 mx-auto leading-7 text-justify">
             We at company-name strive to provide you by developing and implementing innovative solutions which empower your business and make you stand out from your competition. 
             We deliver innovative and scalable solutions to our clients with the latest technology allowing them to grow exponentially with their business pace.
               </p>
@@ -44,7 +44,7 @@ const About = () => {
               <img
                 src="https://www.pngplay.com/wp-content/uploads/7/Global-Networking-Transparent-PNG.png"
                 alt=""
-                className="object-cover w-full  pb-14 "
+                className="object-cover w-full pb-14 "
               />
             </div>
           </div>
